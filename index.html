@@ -476,17 +476,16 @@
         <div class="footer-container-form">
           <p class="footer-form-text">Subscribe</p>
           <form class="footer-form">
-            <label class="footer-label">
-              <input
-                class="footer-input"
-                type="email"
-                name="email"
-                placeholder="E-mail"
-              />
-            </label>
+            <label class="footer-label"></label>
+            <input
+              class="footer-input"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+            />
             <button class="footer-button" type="submit">
               Subscribe
-              <svg width="24" height="24">
+              <svg class="footer-icon-send" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
@@ -495,7 +494,13 @@
       </div>
     </footer>
 
-    <div class="modal-overlay">
+    <!-- MODAL -->
+
+    <div class="backdrop is-open">
+      <div class="modal"></div>
+    </div>
+
+    <!-- <div class="modal-overlay">
       <div class="modal">
         <button class="modal-button-close">
           <svg class="model-icon-close" width="8" height="8">
@@ -543,11 +548,17 @@
           ></textarea>
 
           <div class="modal-checkbox">
-            <input class="checkbox-input" type="checkbox" id="user-privacy" />
+            <input
+              class="checkbox-input visually-hidden"
+              type="checkbox"
+              id="user-privacy"
+              name="user-privacy"
+              value="true"
+            />
             <label class="checkbox-label" for="user-privacy">
               <span class="checkbox-icon">
                 <svg class="checkbox-svg" width="10" height="8">
-                  <use href="./images/icons.svg#icon-checkbox"></use>
+                  <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
               I accept the terms and conditions of the
@@ -558,6 +569,6 @@
           <button class="modal-button" type="button">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
   </body>
 </html>

@@ -81,12 +81,15 @@ section {
 .nav-span {
   color: #2e2f42;
 }
+.nav-menu.current {
+  position: relative;
+}
 .nav-menu {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #404bbf;
+  color: #434455;
   padding: 24px 0;
   display: block;
   color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -96,17 +99,16 @@ section {
 .nav-menu:hover,
 .nav-menu:focus,
 .nav-contacts:hover,
-.nav-contacts:focus {
+.nav-contacts:focus,
+.nav-menu.current {
   color: #404bbf;
 }
 
 .nav-menu :focus {
   color: #404bbf;
 }
-.current a {
-  position: relative;
-}
-.current a::after {
+
+.nav-menu.current::after {
   content: '';
   position: absolute;
   left: 0;
@@ -118,7 +120,7 @@ section {
   border-radius: 2px;
   transition: width 250ms ease;
 }
-.current a:hover::after {
+.nav-menu.current:hover::after {
   background-color: #404bbf;
   border-radius: 2px;
   width: 100%;

@@ -633,12 +633,12 @@ address {
   color: rgba(46, 47, 66, 0.4);
 }
 .modal-checkbox {
-  margin-top: 28px;
-}
-.label-checkbox {
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin-top: 28px;
 }
+
 .checkbox-text {
   font-weight: 400;
   font-size: 12px;

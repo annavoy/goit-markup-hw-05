@@ -92,7 +92,6 @@ section {
   color: #434455;
   padding: 24px 0;
   display: block;
-  color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -118,7 +117,6 @@ section {
   color: #404bbf;
   background-color: #404bbf;
   border-radius: 2px;
-  transition: width 250ms ease;
 }
 .nav-menu.current:hover::after {
   background-color: #404bbf;
@@ -434,20 +432,24 @@ address {
 .footer-container-form {
   margin-left: 80px;
 }
+.footer-form {
+  display: flex;
 
+  column-gap: 24px;
+}
 .footer-form-text {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
+  margin-bottom: 16px;
 }
 .footer-input {
   font-weight: 400;
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
-  color: #fff;
   border: 1px solid #fff;
   border-radius: 4px;
   width: 264px;
@@ -457,10 +459,6 @@ address {
 }
 .footer-input::placeholder {
   padding: 8px 16px;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.04em;
   color: #fff;
 }
 
@@ -474,7 +472,15 @@ address {
   border-radius: 4px;
   padding: 8px 24px;
   background: #4d5ae5;
-  margin-left: 24px;
+  cursor: pointer;
+  border: none;
+  max-width: 165px;
+  max-height: 40px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-icon-send {
+  fill: #fcfcfc;
+  margin-left: 16px;
 }
 
 /* ======MODAL===== */

@@ -54,7 +54,9 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-button" type="button">Order Service</button>
+          <button class="hero-button" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -476,21 +478,22 @@
         <div class="footer-container-form">
           <p class="footer-form-text">Subscribe</p>
           <form class="footer-form">
-            <label class="footer-label">
-              <input
-                class="footer-input"
-                type="email"
-                name="email"
-                placeholder="E-mail"
-              />
-            </label>
-
-            <button class="footer-button" type="submit">
-              Subscribe
-              <svg class="footer-icon-send" width="24" height="24">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
+            <input
+              class="footer-input"
+              id="footer-email"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+            />
+            <label class="footer-label" for="footer-email"></label>
+            <div class="footer-button-icon">
+              <button class="footer-button" type="submit">
+                Subscribe
+                <svg class="footer-icon-send" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
           </form>
         </div>
       </div>
@@ -498,9 +501,9 @@
 
     <!-- MODAL -->
 
-    <div class="backdrop">
+    <div class="backdrop" data-modal>
       <div class="modal">
-        <button class="modal-button" type="button">
+        <button class="modal-button" type="button" data-modal-close>
           <svg class="modal-button-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -568,5 +571,6 @@
         </form>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

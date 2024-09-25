@@ -478,22 +478,21 @@
         <div class="footer-container-form">
           <p class="footer-form-text">Subscribe</p>
           <form class="footer-form">
-            <input
-              class="footer-input"
-              id="footer-email"
-              type="email"
-              name="email"
-              placeholder="E-mail"
-            />
-            <label class="footer-label" for="footer-email"></label>
-            <div class="footer-button-icon">
-              <button class="footer-button" type="submit">
-                Subscribe
-                <svg class="footer-icon-send" width="24" height="24">
-                  <use href="./images/icons.svg#icon-send"></use>
-                </svg>
-              </button>
-            </div>
+            <label class="footer-label" for="footer-email">
+              <input
+                class="footer-input"
+                id="footer-email"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="footer-button" type="submit">
+              Subscribe
+              <svg class="footer-icon-send" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
@@ -510,38 +509,48 @@
         </button>
         <p class="modal-text">Leave your contacts and we will call you back</p>
         <form class="modal-form">
-          <div class="user-name">
-            <label class="modal-label" for="name">Name</label>
+          <div class="user-info">
+            <label class="modal-label" for="user-name">Name</label>
             <div class="user-form">
-              <input class="modal-input" id="name" type="text" />
+              <input
+                class="modal-input"
+                id="user-name"
+                type="text"
+                name="user-name"
+              />
               <svg class="input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
           </div>
-          <div class="user-phone">
+          <div class="user-info">
             <label class="modal-label" for="tel">Phone</label>
             <div class="user-form">
-              <input class="modal-input" id="tel" type="tel" />
+              <input class="modal-input" id="tel" type="tel" name="user-tel" />
               <svg class="input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
           </div>
-          <div class="user-email">
+          <div class="user-info">
             <label class="modal-label" for="email">Email</label>
             <div class="user-form">
-              <input class="modal-input" id="email" type="email" />
+              <input
+                class="modal-input"
+                id="email"
+                type="email"
+                name="user-email"
+              />
               <svg class="input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
           </div>
           <div class="user-comment">
-            <label class="modal-label" for="comment">Comment</label>
+            <label class="modal-label" for="user-comment">Comment</label>
             <textarea
               class="modal-textarea"
-              id="comment"
+              id="user-comment"
               name="user-comment"
               placeholder="Text input"
             ></textarea>
@@ -560,14 +569,19 @@
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
+              I accept the terms and conditions of the &nbsp;<a
+                class="checkbox-link"
+                href="#"
+                >Privacy Policy</a
+              >
             </label>
-            <p class="checkbox-text">
+            <!-- <p class="checkbox-text">
               I accept the terms and conditions of the
             </p>
             &nbsp;
-            <a class="checkbox-link" href="#">Privacy Policy</a>
+            <a class="checkbox-link" href="#">Privacy Policy</a> -->
           </div>
-          <button class="modal-botton">Send</button>
+          <button class="modal-button-send">Send</button>
         </form>
       </div>
     </div>

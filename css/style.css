@@ -563,8 +563,8 @@ address {
   border: none;
 }
 
-.modal-button:hover > .modal-button-icon,
-.modal-button:focus > .modal-button-icon {
+.modal-button:hover > .modal-button-icon.icon,
+.modal-button:focus > .modal-button-icon.icon {
   fill: #ffffff;
 }
 .modal-text {

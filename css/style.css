@@ -556,6 +556,9 @@ address {
   padding-left: 24px;
   padding-right: 24px;
 }
+.user-form {
+  margin-bottom: 8px;
+}
 .modal-label {
   font-weight: 400;
   font-size: 12px;
@@ -572,9 +575,8 @@ address {
   width: 100%;
   height: 40px;
   outline: none;
-  margin-bottom: 8px;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-input:hover,
 .modal-input:focus {
@@ -590,8 +592,10 @@ address {
 }
 .input-icon {
   position: absolute;
-  top: 25%;
+  top: 50%;
   left: 16px;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-textarea {
   width: 100%;
